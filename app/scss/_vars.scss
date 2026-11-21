@@ -1,6 +1,8 @@
 $color-accent: #0F2B41;
-$color-primary: #161515;
-$color-text-muted: #94897C;
+$color-heading: #161515;
+$color-text-primary:#4F4F4F;
+$color-text-accent:#fff;
+
 
 
 %opensans-300{
@@ -26,4 +28,11 @@ $color-text-muted: #94897C;
 %lora-500{       
       font-family: 'Lora-Medium', serif;
       font-weight: 500;
+}
+
+%button-reset{
+      padding: 0;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
 }

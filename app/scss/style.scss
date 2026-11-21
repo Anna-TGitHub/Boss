@@ -8,14 +8,14 @@ body {
    @extend %opensans-400;
     font-size: 20px;
     line-height: 1.3;
-    color: vars.$color-accent;
+    color: vars.$color-heading;
 }
 
 .header{
     padding: 25px 0;
     text-transform: uppercase;
     font-size: 16px;
-    color: vars.$color-primary;
+    color: vars.$color-text-primary;
     &__inner{
         display: flex;
         justify-content: space-between;
@@ -57,3 +57,109 @@ body {
 .logo {
     display: inline-block;
 }
+
+.container {
+}
+.footer {
+    color: vars.$color-text-accent;
+    font-size: 16px;
+    background-color: vars.$color-accent;
+    &__menu {}
+    &__menu-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 55px 134px 60px;
+        border-bottom: 1px solid vars.$color-text-accent;
+        margin-bottom: 50px;
+        
+        
+    }
+    &__menu-item {
+
+    }
+    &__menu-link {
+        border-bottom: 1px solid vars.$color-text-accent;
+    }
+    &__elements {
+        display: flex;
+        justify-content: space-between;
+        gap: 83px;
+        padding-right: 124px;
+        padding-bottom: 50px;
+    }
+    &__element {}
+    &__element-title {
+        opacity: 50%;
+        margin-bottom: 20px;
+    }
+    &__address {}
+    &__element-list {
+        margin-bottom: 5px;
+    }
+    &__element-item {}
+    &__link {}
+    &__form {
+        width: 250px;
+        position: relative;
+    }
+    &__form-input {
+        display: block;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid vars.$color-text-accent;
+        color: vars.$color-text-accent;
+        background-color: vars.$color-accent;
+        padding: 1px 0 5px;
+        &::placeholder {
+            color: vars.$color-text-accent;
+        }
+    }
+    &__form-btn {
+        position: absolute;
+        top: 5px;
+        right: 0;
+        @extend %button-reset;
+    }
+    
+    &__social-list {}
+    &__social-item {}
+    &__social-link {}
+}
+.logo {
+    &__img {}
+}
+
+
+.footer {
+    &__bottom {
+        background-color: vars.$color-heading;
+        font-size: 11px;
+        padding: 7px 0 9px;
+    }
+    &__bottom-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 75px;
+        
+
+    }
+    &__copy {}
+    &__bottom-list {
+        display: flex;
+        align-items: center;
+        gap: 0 37px;
+    }
+    &__bottom-item + .footer__bottom-item {
+        position: relative;
+        &::before{
+            content: '|';
+            position: absolute;
+            left: -21px;
+
+        }
+    }
+}
+
+
