@@ -61,9 +61,9 @@ body {
 .container {
 }
 .footer {
-    color: vars.$color-text-accent;
-    font-size: 16px;
-    background-color: vars.$color-accent;
+        color: vars.$color-text-accent;
+        font-size: 16px;
+        background-color: vars.$color-accent;
     &__menu {}
     &__menu-list {
         display: flex;
@@ -74,9 +74,6 @@ body {
         margin-bottom: 50px;
         
         
-    }
-    &__menu-item {
-
     }
     &__menu-link {
         border-bottom: 1px solid vars.$color-text-accent;
@@ -93,12 +90,9 @@ body {
         opacity: 50%;
         margin-bottom: 20px;
     }
-    &__address {}
     &__element-list {
         margin-bottom: 5px;
     }
-    &__element-item {}
-    &__link {}
     &__form {
         width: 250px;
         position: relative;
@@ -121,10 +115,6 @@ body {
         right: 0;
         @extend %button-reset;
     }
-    
-    &__social-list {}
-    &__social-item {}
-    &__social-link {}
 }
 .logo {
     &__img {}
@@ -142,10 +132,7 @@ body {
         justify-content: space-between;
         align-items: center;
         padding: 0 75px;
-        
-
     }
-    &__copy {}
     &__bottom-list {
         display: flex;
         align-items: center;
